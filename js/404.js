@@ -6,18 +6,16 @@ $(document).ready(() => {
 div = $(".container.shake")
 div.click(() => {
     div.removeClass("shake")
-    window.requestAnimationFrame(function() {
-        div.addClass("shake")
-        vibrate()
-    });
+
+    // needs a 1ms delay because otherwise Firefox doesn't repeat the animation
+    window.setTimeout(() => {
+        window.requestAnimationFrame(() => {
+            div.addClass("shake")
+            vibrate()
+        });
+    },1)
 })
 
 vibrate = () => {
-    // on Firefox Mobile or other unsupported browsers this not working
-    // should hopefully not break the animation repeat function
-    try {
-        navigator.vibrate([5,100,5,100,3,100,2,100,1])
-    } catch(e) {
-        console.log(`Vibration likely unsupported\n${e}`)
-    }
+    navigator.vibrate([5,100,5,100,3,100,2,100,1])
 }
