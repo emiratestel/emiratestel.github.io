@@ -1,9 +1,8 @@
 ---
 layout: default
-title: EmiratesTel
+title: UAE Telecom
 ---
 
-# Welcome
 ### [Join the subreddit](https://reddit.com/r/etisalat)
 ### [Join the Discord](https://discord.gg/6XUPVhyNKz)
 
