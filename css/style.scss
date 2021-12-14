@@ -20,6 +20,17 @@ body {
 
 .container {
     padding: 1.5rem 1rem;
+    &.error {
+        animation: 0.5s shake;
+    }
+}
+@keyframes shake {
+    0% { transform: translateX(10px); }
+    20% { transform: translateX(-10px); }
+    40% { transform: translateX(6px); }
+    60% { transform: translateX(-4px); }
+    80% { transform: translateX(2px); }
+    100% { transform: translateX(0px); }
 }
 
 .header {
