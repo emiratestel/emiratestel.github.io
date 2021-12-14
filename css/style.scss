@@ -20,7 +20,7 @@ body {
 
 .container {
     padding: 1.5rem 1rem;
-    &.error {
+    &.shake {
         animation: 0.5s shake;
     }
 }
