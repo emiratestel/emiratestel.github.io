@@ -12,6 +12,8 @@ div.click(() => {
         // should hopefully not break the animation repeat function
         try {
             navigator.vibrate([5,100,5,100,3,100,2,100,1])
+        } catch(e) {
+            console.log(`Vibration likely unsupported\n${e}`)
         }
     });
 })
