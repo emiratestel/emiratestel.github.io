@@ -12,6 +12,9 @@ $font-stack: "Poppins", "Helvetica", "Arial";
     .container {
         padding: 1.5rem 0;
     }
+    .mobile {
+        display: none;
+    }
 }
 
 body {
