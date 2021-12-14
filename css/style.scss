@@ -1,0 +1,60 @@
+---
+---
+
+$font-stack: "Poppins", "Helvetica", "Arial";
+
+// NOT MOBILE
+@media screen and (min-width: 768px) {
+    .header {
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    .container {
+        padding: 1.5rem 0;
+    }
+}
+
+body {
+    font-family: $font-stack;
+}
+
+.container {
+    padding: 1.5rem 1rem;
+}
+
+.header {
+    align-items: center;
+    margin: 0 0 1rem 0;
+    .card-body {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        h1 {
+            margin: 0;
+        }
+    }
+    img {
+        height: 6rem; width: auto;
+        margin: 1rem;
+    }
+}
+
+.list-group.list-group-root {
+    padding: 0;
+    overflow: hidden;
+    .list-group {
+        margin-bottom: 0;
+    }
+}
+.list-group.list-group-root .list-group-item {
+    border-radius: 0;
+    &:empty {
+        border-bottom-width: 0;
+    }
+}
+.list-group.list-group-root > .list-group:not(:last-child) > .list-group-item {
+    border-bottom-width: 0;
+}
+.list-group.list-group-root > .list-group > .list-group-item {
+    padding-left: 2.5rem;
+    border-width: 0px 1px 1px 1px;
+}

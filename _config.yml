@@ -23,8 +23,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Info about UAE-based telecom providers
 baseurl: "/website" # the subpath of your site, e.g. /blog
 url: "emiratestel.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  emiratestel
 
 collections_dir: exploits
 collections:
