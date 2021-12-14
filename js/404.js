@@ -8,6 +8,10 @@ div.click(() => {
     div.removeClass("shake")
     window.requestAnimationFrame(function() {
         div.addClass("shake")
-        navigator.vibrate([5,100,5,100,3,100,2,100,1])
+        // on Firefox Mobile or other unsupported browsers this not working
+        // should hopefully not break the animation repeat function
+        try {
+            navigator.vibrate([5,100,5,100,3,100,2,100,1])
+        }
     });
 })
