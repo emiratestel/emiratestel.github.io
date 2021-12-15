@@ -7,7 +7,7 @@ div = $(".container.shake")
 div.click(() => {
     div.removeClass("shake")
 
-    // needs a 1ms delay because otherwise Firefox doesn't repeat the animation
+    // needs a delay because otherwise Firefox doesn't repeat the animation
     window.setTimeout(() => {
         window.requestAnimationFrame(() => {
             div.addClass("shake")

@@ -1,0 +1,19 @@
+{% case include.type %}
+    {% when "tip" %}
+        {% assign text = "success" %}
+        {% assign icon = "lightbulb" %}
+    {% else %}
+        {% assign text = "info" %}
+        {% assign icon = "info-circle" %}
+{% endcase %}
+
+<div class="card">
+    <div class="card-body text-{{ text }}" style="padding: 0.5rem 0.8rem">
+        <i class="bi bi-{{ icon }}"></i> {{ include.content }}
+    </div>
+{% comment %}
+This closing tag will sometimees appear as plain text when embedded in markdown, so...
+{% endcomment %}
+{% if include.close != false %}
+</div>
+{% endif %}
