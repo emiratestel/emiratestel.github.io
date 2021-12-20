@@ -7,7 +7,7 @@ ready(() => {
 });
 
 div = $(".container.shake");
-["click","touchend"].forEach(event => {
+["touchend"].forEach(event => {
     div.addEventListener(event, () => {
         div.classList.remove("shake");
 
