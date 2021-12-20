@@ -17,9 +17,11 @@ $font-stack: "Poppins", "Helvetica", "Arial";
     }
 }
 
+
 body {
     font-family: $font-stack;
 }
+
 
 .container {
     padding: 1.5rem 1rem;
@@ -36,6 +38,7 @@ body {
     100% { transform: translateX(0px); }
 }
 
+
 .header {
     align-items: center;
     margin: 0 0 1rem 0;
@@ -51,6 +54,21 @@ body {
         margin: 1rem;
     }
 }
+
+
+nav.navbar .navbar-brand {
+    .back-arrow {
+        display: inline-block;
+    }
+    &:hover .back-arrow {
+        animation: 0.25s wiggle infinite alternate ease-in-out;
+    }
+}
+@keyframes wiggle {
+    from { transform: translateX(0px); }
+    to { transform: translateX(-3px); }
+}
+
 
 .list-group.list-group-root {
     padding: 0;

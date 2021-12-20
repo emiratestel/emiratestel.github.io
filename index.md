@@ -1,6 +1,7 @@
 ---
 layout: default
 title: UAE Telecom
+id: index
 ---
 
 ### [Join the subreddit](https://reddit.com/r/etisalat)
