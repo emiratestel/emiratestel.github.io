@@ -9,12 +9,12 @@ ready(() => {
 div = $(".container.shake");
 ["click","touchend"].forEach(event => {
     div.addEventListener(event, () => {
-        div.removeClass("shake");
+        div.classList.remove("shake");
 
         // needs a delay because otherwise Firefox doesn't repeat the animation
         window.setTimeout(() => {
             window.requestAnimationFrame(() => {
-                div.addClass("shake");
+                div.classList.add("shake");
                 vibrate();
             });
         },1);
