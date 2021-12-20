@@ -1,4 +1,7 @@
 // Haptics to click while the 404 page shakes
+vibrate = () => { navigator.vibrate([5,100,5,100,3,100,2,100,1]) }
+
+// on page load
 ready(() => {
     vibrate()
 })
@@ -17,5 +20,3 @@ div = $(".container.shake")
         },1)
     })
 })
-
-vibrate = () => { navigator.vibrate([5,100,5,100,3,100,2,100,1]) }
