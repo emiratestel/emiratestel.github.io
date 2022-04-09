@@ -2,6 +2,9 @@
     {% when "tip" %}
         {% assign text = "success" %}
         {% assign icon = "lightbulb" %}
+    {% when "warning" %}
+        {% assign text = "danger" %}
+        {% assign icon = "exclamation-triangle" %}
     {% else %}
         {% assign text = "info" %}
         {% assign icon = "info-circle" %}
