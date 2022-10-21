@@ -26,6 +26,12 @@ body {
 .toast { max-width: 85vw; }
 
 
+dl, ol, ul { margin-bottom: 0; }
+
+
+.card { margin: 0.25rem 0 }
+
+
 .container {
     padding: 1.5rem 1rem;
     &.shake {
