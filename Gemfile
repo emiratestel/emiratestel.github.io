@@ -16,11 +16,7 @@ gem "minima", "~> 2.5"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
-<<<<<<< HEAD
   gem "jekyll-menus", :git => "https://github.com/forestryio/jekyll-menus.git"
-=======
-  gem "jekyll-menus"
->>>>>>> parent of ac49ed6 (Revert "Switch to jekyll-menus and add FaceTime bypass")
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
