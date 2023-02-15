@@ -26,10 +26,14 @@ body {
 .toast { max-width: 85vw; }
 
 
-dl, ol, ul { margin-bottom: 0; }
+/*dl, ol, ul { margin-bottom: 0; }*/
+// make sure cards in the middle of a list appear without a gap
+dl, ol, ul + div.card {
+    margin-top: -1rem;
+}
 
 
-.card { margin: 0.25rem 0 }
+.card { margin: 0.25rem 0; }
 
 
 .container {
@@ -95,7 +99,7 @@ nav.navbar .navbar-brand {
 .list-group.list-group-root > .list-group:not(:last-child) > .list-group-item {
     border-bottom-width: 0;
 }
-.list-group.list-group-root > .list-group > .list-group-item {
-    padding-left: 2.5rem;
+.list-group > .list-group {
+    padding-left: 0.5rem;
     border-width: 0px 1px 1px 1px;
 }

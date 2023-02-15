@@ -13,7 +13,7 @@
     
     <div class="container"> 
         <div class="card header">
-            {% if page.url contains "exploits/" or page.url contains "devices" %}
+            {% if page.type == "device" %}
             <img src="{{site.baseurl}}/images/devices/{{page.device}}.svg" class="card-img-left" alt="Diagram of the device">
             {% endif %}
             <div class="card-body">

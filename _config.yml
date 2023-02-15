@@ -25,13 +25,13 @@ baseurl: "/website" # the subpath of your site, e.g. /blog
 url: "emiratestel.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  emiratestel
 
-collections_dir: exploits
+collections_dir: _exploits
 collections:
-  exploits:
+  Du:
     output: true
-  devices:
+  Etisalat:
     output: true
-  providers:
+  Other:
     output: true
 
 # Build settings

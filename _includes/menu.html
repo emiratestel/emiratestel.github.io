@@ -1,0 +1,13 @@
+{% if menu %}
+<div class="list-group {% if menu.identifier == 'header' %}list-group-root{% endif %}">
+    {% for item in menu %}
+    <a class="list-group-item list-group-item-action" href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
+    <div class="list-group">
+    {% if item.children %}
+    {% assign menu = item.children %}
+    {% include menu.html %}
+    {% endif %}
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
