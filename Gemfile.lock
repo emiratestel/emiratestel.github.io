@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/forestryio/jekyll-menus.git
+  revision: 288acfacfaa14a94fbfd6738b10f9311da3a436c
+  specs:
+    jekyll-menus (0.6.1)
+      jekyll (>= 3.6, < 5.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -33,8 +40,6 @@ GEM
       terminal-table (~> 2.0)
     jekyll-feed (0.17.0)
       jekyll (>= 3.7, < 5.0)
-    jekyll-menus (0.6.1)
-      jekyll (>= 3.6, < 5.0)
     jekyll-sass-converter (2.2.0)
       sassc (> 2.0.1, < 3.0)
     jekyll-seo-tag (2.8.0)
@@ -85,7 +90,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 4.2.1)
   jekyll-feed (~> 0.12)
-  jekyll-menus
+  jekyll-menus!
   minima (~> 2.5)
   tzinfo (~> 1.2)
   tzinfo-data
